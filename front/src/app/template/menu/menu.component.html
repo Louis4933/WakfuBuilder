@@ -1,0 +1,12 @@
+<nav>
+  <ul>
+    <li routerLink="/">Accueil</li>
+    <li routerLink="/wiki-items">Liste des items</li>
+    <li routerLink="/liste-builds">Liste des builds</li>
+    <li routerLink="/creation-build">Générer un build</li>
+    <li routerLink="/mesBuilds" *ngIf="auth.isLoggedIn">Mes builds</li>
+    <li routerLink="/login"  *ngIf="!auth.isLoggedIn">M'inscrire / Se connecter</li>
+    <li routerLink="/" (click)="auth.logout()" *ngIf="auth.isLoggedIn">Se déconnecter</li>
+    <li  class="user_name" *ngIf="auth.isLoggedIn && auth.user" >Bonjour {{auth.user.username}}</li>
+  </ul>
+</nav>

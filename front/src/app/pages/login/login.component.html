@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="box">
+    <div class="box_form">
+      <div class="form">
+        <form (submit)="register()">
+          <h1>Inscription</h1>
+          <fieldset>
+            <legend>Nom d'utilisateur : </legend>
+            <input [(ngModel)]="userNameSignUp" name="username" required>
+          </fieldset>
+          <fieldset>
+            <legend>Mot de passe : </legend>
+            <input type="password" [(ngModel)]="passwordSignUp" name="password" required>
+          </fieldset>
+
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div class="box_form">
+      <div class="form">
+        <form (submit)="login()">
+          <h1>Connexion</h1>
+          <fieldset>
+            <legend>Nom d'utilisateur : </legend>
+            <input [(ngModel)]="userNameLogIn" name="username" required>
+          </fieldset>
+          <fieldset>
+            <legend>Mot de passe : </legend>
+            <input type="password" [(ngModel)]="passwordLogIn" name="password" required>
+          </fieldset>
+          <button type="submit">Se connecter</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

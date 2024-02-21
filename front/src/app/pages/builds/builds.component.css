@@ -1,0 +1,92 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding: 10px 20px;
+}
+
+/* Partie filtre */
+.div_filtre {
+  width: 20vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+/* .name_items {
+  width:200px;
+} */
+
+input[type="text"]{
+  width: 150px;
+}
+
+
+/* Partie liste items */
+.div_liste {
+  width: 90%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.liste_builds {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  align-items: stretch;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 10px 20px;
+}
+
+/* Partie Card_build */
+.card_build {
+  margin : 10px 0;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 10px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card_build_header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.card_build_header > h3 {
+  text-decoration: underline;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+}
+
+.card_build_item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+mat-select {
+  border: solid 1px #ccc;
+  margin: 10px 0;
+}

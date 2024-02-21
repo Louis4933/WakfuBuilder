@@ -1,0 +1,41 @@
+.card_item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: 1px solid #979797;
+  margin: 50px;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card_title {
+  text-align: center;
+}
+
+.card_img {
+  /* background-color: #adaaaa; */
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even){
+  background-color: #818181;
+}
+
+tr:nth-child(odd){
+  background-color: rgb(201, 201, 201)
+}
+
+tr > p {
+  padding: 0px 10px;
+}

@@ -1,0 +1,57 @@
+<div class="container">
+
+  <div class="div_filtre">
+
+    <div class="type_items">
+      <fieldset *ngIf="equipementType.map_equipementParentItemTypes.size > 0" >
+        <legend>Type d'item</legend>
+        <div class="liste_types">
+          <button *ngFor="let type of equipementType.map_equipementParentItemTypes | keyvalue" (click)="selectType(type.value)"  [class.selected]="isArrayEqual(type.value)">{{equipementType.map_equipementItemTypes.get(type.key)?.title?.fr}}</button>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="level_items">
+      <fieldset>
+        <legend>Niveau</legend>
+        <mat-slider min="0" max="230" step="1" showTickMarks discrete>
+          <input  matSliderStartThumb [(ngModel)]="levelFilter[0]" name="sliderStart">
+          <input  matSliderEndThumb [(ngModel)]="levelFilter[1]" name="sliderEnd">
+        </mat-slider>
+        <div>
+          Niveau minimum : {{ levelFilter[0] }}
+        </div>
+        <div>
+          Niveau maximum : {{ levelFilter[1] }}
+        </div>
+      </fieldset>
+    </div>
+    <div class="name_items">
+      <fieldset>
+        <legend>Nom</legend>
+        <input type="text" [(ngModel)]="nameItem"  placeholder="Rechercher un item">
+      </fieldset>
+    </div>
+
+    <div class="effects_filter">
+      <fieldset>
+        <legend>Effets</legend>
+        <mat-select [(ngModel)]="effectsFilter" multiple>
+          <mat-select-trigger>
+            {{effectsFilter.length >= 1 ? effectsFilter.length + ' effects' : 'Aucun'}}
+          </mat-select-trigger>
+          <mat-option *ngFor="let effect of actions.arr_actions_filtered" [value]="effect.definition.idActionDefinition">{{effect.definition.effect}}</mat-option>
+        </mat-select>
+        <button (click)="resetEffectFilter()">Effacer les filtres des effets</button>
+      </fieldset>
+    </div>
+
+  </div>
+
+
+  <div class="div_liste">
+    <div class="liste_items" *ngIf="items.arr_items.length > 0" (scroll)="onScroll($event)">
+      <app-card-item *ngFor="let i of (items.arr_items | name:nameItem | level:levelFilter[0]:levelFilter[1] | effectFilter:effectsFilter) | slice:0:toShow" [item]="i"></app-card-item>
+    </div>
+  </div>
+</div>

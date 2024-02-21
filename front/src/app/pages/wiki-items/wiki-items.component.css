@@ -1,0 +1,67 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding: 10px 20px;
+}
+
+/* Partie filtre */
+.div_filtre {
+  width: 15vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.liste_types {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
+
+button.selected {
+  background-color: var(--bleu);
+}
+
+/* .name_items {
+  width:200px;
+} */
+
+input[type="text"]{
+  width: 150px;
+}
+
+
+/* Partie liste items */
+.div_liste {
+  width: 90%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.liste_items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 10px 20px;
+}
+
+
+mat-select {
+  border: solid 1px #ccc;
+  margin: 10px 0;
+}

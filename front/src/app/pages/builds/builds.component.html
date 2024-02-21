@@ -1,0 +1,80 @@
+<div class="container">
+
+  <div class="div_filtre">
+
+    <div class="level_build">
+      <fieldset>
+        <legend>Niveau</legend>
+        <mat-slider min="0" max="230" step="1" showTickMarks discrete>
+          <input  matSliderStartThumb [(ngModel)]="levelFilter[0]" name="sliderStart">
+          <input  matSliderEndThumb [(ngModel)]="levelFilter[1]" name="sliderEnd">
+        </mat-slider>
+        <div>
+          Niveau minimum : {{ levelFilter[0] }}
+        </div>
+        <div>
+          Niveau maximum : {{ levelFilter[1] }}
+        </div>
+      </fieldset>
+    </div>
+    <div class="name_build">
+      <fieldset>
+        <legend>Nom</legend>
+        <input type="text" [(ngModel)]="nameBuild"  placeholder="Rechercher un item">
+      </fieldset>
+    </div>
+    <div class="cost_build">
+      <fieldset>
+        <legend>Coût du Build</legend>
+        <select name="classBuild" [(ngModel)]="costFilter" required>
+          <option value="all">Tous les coûts</option>
+          <option value="low">Bas</option>
+          <option value="medium">Moyen</option>
+          <option value="high">Élevé</option>
+        </select>
+      </fieldset>
+    </div>
+
+    <div class="effects_filter">
+      <fieldset>
+        <legend>Effets</legend>
+        <mat-select [(ngModel)]="effectsFilter" multiple>
+          <mat-select-trigger>
+            {{effectsFilter.length >= 1 ? effectsFilter.length + ' effects' : 'Aucun'}}
+          </mat-select-trigger>
+          <mat-option *ngFor="let effect of actions.arr_actions_filtered" [value]="effect.definition.idActionDefinition">{{effect.definition.effect}}</mat-option>
+        </mat-select>
+        <button (click)="resetEffectFilter()">Effacer les filtres des effets</button>
+      </fieldset>
+    </div>
+
+  </div>
+
+
+  <div class="div_liste">
+    <div class="liste_builds" *ngIf="arr_builds.length > 0" (scroll)="onScroll($event)">
+      <div class="card_build" *ngFor="let b of (arr_builds | name:nameBuild | level:levelFilter[0]:levelFilter[1] | costFiilter:costFilter | effectFilter: effectsFilter) | slice:0:toShow">
+        <div class="card_build_header" [routerLink]="'/build/' + b.id">
+          <div>
+            <h3>{{ b.name }} </h3>
+            <h4>Créateur : {{ b.userInfos[1] }}</h4>
+          </div>
+          <div>
+            <h3>Niveau : {{ b.level }}</h3>
+            <h3>Coût : {{ b.cost | sentenceCost}}</h3>
+          </div>
+        </div>
+        <hr />
+        <div class="card_build_item">
+          <span *ngFor="let item of b.items">
+            <img *ngIf="item && item.definition && item.definition.item && item.definition.item.graphicParameters && item.definition.item.graphicParameters.gfxId"
+                 [src]="'https://vertylo.github.io/wakassets/items/' + item.definition.item.graphicParameters.gfxId + '.png'"
+                 [alt]="item.title.fr">
+          </span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

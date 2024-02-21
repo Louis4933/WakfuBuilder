@@ -1,0 +1,573 @@
+[
+  {
+    "definition": {
+      "idEITDefinition": 101,
+      "parentId": 519,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [
+        "SECOND_WEAPON"
+      ],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Hache (Deux mains)",
+      "en": "Ax (two hands)",
+      "es": "Hacha (dos manos)",
+      "pt": "Machado (duas mãos)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 103,
+      "parentId": 118,
+      "equipmentPositions": [
+        "LEFT_HAND",
+        "RIGHT_HAND"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Anneau",
+      "en": "Ring",
+      "es": "Anillo",
+      "pt": "Anel"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 108,
+      "parentId": 518,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Baguette (Une main)",
+      "en": "Wand (one hand)",
+      "es": "Varita (una mano)",
+      "pt": "Varinha (uma mão)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 110,
+      "parentId": 518,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Epée (Une main)",
+      "en": "Sword (one hand)",
+      "es": "Espada (una mano)",
+      "pt": "Espada (uma mão)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 111,
+      "parentId": 519,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [
+        "SECOND_WEAPON"
+      ],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Pelle (Deux mains)",
+      "en": "Shovel (two hands)",
+      "es": "Pala (dos manos)",
+      "pt": "Pá (duas mãos)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 112,
+      "parentId": 520,
+      "equipmentPositions": [
+        "SECOND_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Dague (Seconde main)",
+      "en": "Dagger (other hand)",
+      "es": "Daga (segunda mano)",
+      "pt": "Adaga (segunda mão)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 113,
+      "parentId": 518,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Bâton (Une main)",
+      "en": "Staff (one hand)",
+      "es": "Bastón (una mano)",
+      "pt": "Bastão (uma mão)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 114,
+      "parentId": 519,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [
+        "SECOND_WEAPON"
+      ],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Marteau (Deux mains)",
+      "en": "Hammer (two hands)",
+      "es": "Martillo (dos manos)",
+      "pt": "Martelo (duas mãos)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 115,
+      "parentId": 518,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Aiguille (Une main)",
+      "en": "Clock Hand (one hand)",
+      "es": "Aguja (una mano)",
+      "pt": "Ponteiro (uma mão)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 117,
+      "parentId": 519,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [
+        "SECOND_WEAPON"
+      ],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Arc (Deux mains)",
+      "en": "Bow (two hands)",
+      "es": "Arco (dos manos)",
+      "pt": "Arco (duas mãos)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 119,
+      "parentId": 118,
+      "equipmentPositions": [
+        "LEGS"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Bottes",
+      "en": "Boots",
+      "es": "Botas",
+      "pt": "Botas"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 120,
+      "parentId": 118,
+      "equipmentPositions": [
+        "NECK"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Amulette",
+      "en": "Amulet",
+      "es": "Amuleto",
+      "pt": "Amuleto"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 132,
+      "parentId": 118,
+      "equipmentPositions": [
+        "BACK"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Cape",
+      "en": "Cloak",
+      "es": "Capa",
+      "pt": "Capa"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 133,
+      "parentId": 118,
+      "equipmentPositions": [
+        "BELT"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Ceinture",
+      "en": "Belt",
+      "es": "Cinturón",
+      "pt": "Cinto"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 134,
+      "parentId": 118,
+      "equipmentPositions": [
+        "HEAD"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Casque",
+      "en": "Helmet",
+      "es": "Casco",
+      "pt": "Capacete"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 136,
+      "parentId": 118,
+      "equipmentPositions": [
+        "CHEST"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Plastron",
+      "en": "Breastplate",
+      "es": "Coraza",
+      "pt": "Peitoral"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 138,
+      "parentId": 118,
+      "equipmentPositions": [
+        "SHOULDERS"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Epaulettes",
+      "en": "Epaulettes",
+      "es": "Hombreras",
+      "pt": "Dragonas"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 189,
+      "parentId": 520,
+      "equipmentPositions": [
+        "SECOND_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Bouclier (Seconde main)",
+      "en": "Shield (other hand)",
+      "es": "Escudo (segunda mano)",
+      "pt": "Escudo (segunda mão)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 219,
+      "parentId": 518,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Poing",
+      "en": "Fist",
+      "es": "Puño",
+      "pt": "Punho "
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 223,
+      "parentId": 519,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [
+        "SECOND_WEAPON"
+      ],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Epée (Deux mains)",
+      "en": "Sword (two hands)",
+      "es": "Espada (dos manos)",
+      "pt": "Espada (duas mãos)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 253,
+      "parentId": 519,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [
+        "SECOND_WEAPON"
+      ],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Bâton (Deux mains)",
+      "en": "Staff (two hands)",
+      "es": "Bastón (dos manos)",
+      "pt": "Bastão (duas mãos)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 254,
+      "parentId": 518,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": true,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Cartes (Une main)",
+      "en": "Cards (one hand)",
+      "es": "Cartas (una mano)",
+      "pt": "Cartas (uma mão)"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 480,
+      "parentId": 521,
+      "equipmentPositions": [
+        "ACCESSORY"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Torches",
+      "en": "Torches",
+      "es": "Antorchas",
+      "pt": "Tochas"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 518,
+      "parentId": 100,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Armes 1 Main",
+      "en": "One-Handed Weapons",
+      "es": "Armas de una mano",
+      "pt": "Armas de 1 mão"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 519,
+      "parentId": 100,
+      "equipmentPositions": [
+        "FIRST_WEAPON"
+      ],
+      "equipmentDisabledPositions": [
+        "SECOND_WEAPON"
+      ],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Armes 2 Mains",
+      "en": "Two-Handed Weapons",
+      "es": "Armas de dos manos",
+      "pt": "Armas de 2 mãos"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 520,
+      "parentId": 100,
+      "equipmentPositions": [
+        "SECOND_WEAPON"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Seconde Main",
+      "en": "Second Hand",
+      "es": "Segunda mano",
+      "pt": "Segunda mão"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 537,
+      "parentId": 521,
+      "equipmentPositions": [
+        "ACCESSORY"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": true
+    },
+    "title": {
+      "fr": "Outils",
+      "en": "Tools",
+      "es": "Herramientas",
+      "pt": "Ferramentas"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 582,
+      "parentId": 420,
+      "equipmentPositions": [
+        "PET"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Familiers",
+      "en": "Pets",
+      "es": "Mascotas",
+      "pt": "Mascotes"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 611,
+      "parentId": 420,
+      "equipmentPositions": [],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Montures",
+      "en": "Mounts",
+      "es": "Monturas",
+      "pt": "Montarias"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 646,
+      "parentId": 521,
+      "equipmentPositions": [
+        "ACCESSORY"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Emblème",
+      "en": "Emblem",
+      "es": "Emblema",
+      "pt": "Emblema"
+    }
+  },
+  {
+    "definition": {
+      "idEITDefinition": 647,
+      "parentId": 525,
+      "equipmentPositions": [
+        "COSTUME"
+      ],
+      "equipmentDisabledPositions": [],
+      "isRecyclable": false,
+      "isVisibleInAnimation": false
+    },
+    "title": {
+      "fr": "Costumes",
+      "en": "Costumes",
+      "es": "Trajes",
+      "pt": "Trajes"
+    }
+  }
+]

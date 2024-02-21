@@ -1,0 +1,71 @@
+<div class="container">
+
+  <div class="box_form" *ngIf="step == 0">
+    <form (submit)="createBuild()">
+      <button type="submit">Créer mon build</button>
+      <fieldset>
+        <label>Nom  du Build : </label>
+        <input [(ngModel)]="nameBuild" name="nameBuild" required>
+      </fieldset>
+
+      <fieldset>
+        <label>Niveau du Build (1 - 230) : </label>
+        <input type="number" maxlength="230" minlength="1" name="levelBuild" [(ngModel)]="levelBuild" required>
+      </fieldset>
+
+      <fieldset>
+        <label>Coût du Build : </label>
+        <select name="classBuild" [(ngModel)]="costBuild" required>
+          <option value="low">Bas</option>
+          <option value="medium">Moyen</option>
+          <option value="high">Élevé</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label>Choix des effets pour le build : </label>
+        <h6>Au minumun 1 effet ( En mettre plus est recommandé )</h6>
+        <div class="box_effect">
+          <div *ngFor="let action of action.map_Effects | keyvalue">
+            <h3>{{ action.key }}</h3>
+            <div *ngFor="let a of action.value">
+              <input type="checkbox" [value]="a.definition.idActionDefinition" name="selectedEffects" [(ngModel)]="selectedEffect[a.definition.idActionDefinition]">
+              {{ a.definition.effect }}
+
+              <div *ngIf="a.definition.idActionDefinition == 1068 && selectedEffect[a.definition.idActionDefinition]" class="indent">
+                  <input type="radio" [value]="1" [(ngModel)]="maitriseElement" name="maitriseElement">Maîtrise élémentaire sur 1 élément aléatoire<br>
+                  <input type="radio" [value]="2" [(ngModel)]="maitriseElement" name="maitrise">Maîtrise élémentaire sur 2 éléments aléatoires<br>
+                  <input type="radio" [value]="3" [(ngModel)]="maitriseElement" name="maitrise">Maîtrise sur 3 éléments aléatoires
+              </div>
+
+              <div *ngIf="a.definition.idActionDefinition == 1069 && selectedEffect[a.definition.idActionDefinition]" class="indent">
+                  <input type="radio" [value]="1" [(ngModel)]="resistanceElement" name="resistance">Résistance élémentaire sur 1 élément aléatoire<br>
+                  <input type="radio" [value]="2" [(ngModel)]="resistanceElement" name="resistance">Résistance élémentaire sur 2 éléments aléatoires<br>
+                  <input type="radio" [value]="3" [(ngModel)]="resistanceElement" name="resistance">Résistance élémentaire sur 3 éléments aléatoires
+              </div>
+          </div>
+            <hr />
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="box_form" *ngIf="step == 1">
+    <div class="box_rappel">
+      <h1>Rappel</h1>
+      <p>Nom : {{ nameBuild }}</p>
+      <p>Coût : {{ costBuild }}</p>
+      <p>Niveau : {{ levelBuild }}</p>
+    </div>
+    <hr />
+    <form (submit)="prioEffectStep()">
+      <h1>Mettez dans l'ordre de priorité les effets souhaités</h1>
+      <h3>Du plus important au moins important</h3>
+      <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+        <div *ngFor="let effect of effectBuild; let i = index" class="example-box" cdkDrag>{{ i + 1 }} - {{ action.map_actions.get(effect)?.definition?.effect }} </div>
+      </div>
+      <button type="submit">Créer mon build</button>
+    </form>
+  </div>
+</div>

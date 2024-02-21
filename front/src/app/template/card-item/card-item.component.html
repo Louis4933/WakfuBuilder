@@ -1,0 +1,21 @@
+
+<div class="card_item" *ngIf="item">
+  <div class="card_title">
+    <h3>{{item.title.fr}}</h3>
+    <p>{{item.definition.item.baseParameters.rarity | rarity }} | Lv.{{levelItem(item.definition.item.level)}}</p>
+  </div>
+  <div class="card_img">
+    <img [src]="'https://vertylo.github.io/wakassets/items/' + item.definition.item.graphicParameters.gfxId + '.png'" [alt]="item.title.fr">
+  </div>
+  <table *ngIf="item.definition.equipEffects">
+    <tbody>
+      <tr *ngFor="let e of item.definition.equipEffects">
+        <p *ngIf="(!e.effect.description && e.effect.definition.actionId !==304 )">{{parseString(actions.map_actions.get(e.effect.definition.actionId)?.description?.fr, e.effect.definition.params, item.definition.item.level) | element }}</p>
+
+        <p *ngIf="e.effect.description && e.effect.definition.actionId !==304 && e.effect.definition.actionId == 39">{{parseString(e.effect.description.fr, e.effect.definition.params, item.definition.item.level) | element}}</p>
+
+        <p *ngIf="e.effect.description && e.effect.definition.actionId !==304 && e.effect.definition.actionId != 39">{{ e.effect.description.fr}}</p>
+      </tr>
+    </tbody>
+  </table>
+</div>
